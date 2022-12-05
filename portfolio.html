@@ -16,30 +16,30 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <div class="headline">
+    <header class="header-section">
+      <div class="container header-container">
         <a class="logo">Web Studio</a>
         <nav class="nav-bar">
-          <ul class="header-list">
-            <li>
-              <a href="./index.html" class="nav-link">Studio</a>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="./index.html" class="navigation-item-link">Studio</a>
             </li>
-            <li>
-              <a href="./portfolio.html" class="nav-link nav-link-current"
+            <li class="navigation-item">
+              <a href="./portfolio.html" class="navigation-item-link"
                 >Portfolio</a
               >
             </li>
-            <li class="nav-link">Contacts</li>
+            <li class="navigation-item"><a class="navigation-item-link">Contacts</a></li>
           </ul>
         </nav>
-        <ul class="info-style">
-          <li>
-            <a class="e-mail header-contact" href="mailto:info@devstudio.com"
+        <ul class="header-contacts-list">
+          <li class="header-contacts-item">
+            <a class="header-contacts-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="phone-number header-contact" href="tel:+380961111111"
+          <li class="header-contacts-item">
+            <a class="header-contacts-link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
@@ -49,22 +49,22 @@
 
     <main>
       <section class="projects-section">
-        <div>
+        <div class="container">
           <!-- <h2>Portfolio</h2> -->
           <ul class="button-list">
-            <li>
+            <li class="button-list-item">
               <button type="button" class="filter-button">All</button>
             </li>
-            <li>
+            <li class="button-list-item">
               <button type="button" class="filter-button">Websites</button>
             </li>
-            <li>
-              <button type="button" class="filter-button">Apps</button>
+            <li class="button-list-item">
+              <button type="button" class="filter-button apps-button">Apps</button>
             </li>
-            <li>
+            <li class="button-list-item">
               <button type="button" class="filter-button">Design</button>
             </li>
-            <li>
+            <li class="button-list-item">
               <button type="button" class="filter-button">Marketing</button>
             </li>
           </ul>
@@ -169,6 +169,7 @@
       </section>
     </main>
     <footer class="footer-section">
+      <div class="container">
       <div class="footer-container">
           <ul class="footer-style">
             <a href="/index.html" class="logo">Web Studio</a>
@@ -196,6 +197,7 @@
           </ul>
           </ul>
         </address>
+      </div>
       </div>
     </footer>
   </body>
