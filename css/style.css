@@ -163,6 +163,7 @@ ul {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 200px;
+  border-style: none;
 }
 
 .hero-button:hover,
@@ -173,18 +174,33 @@ ul {
 
 /*SKILLS*/
 
+.skills-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .skills-section li {
   display: block;
 }
 
+.skills-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .skills-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
-.skills-item {
+.skills-item:not(:last-child) {
   margin-right: 30px;
 }
 .skills-item-title {
@@ -205,13 +221,17 @@ ul {
 
 /* Business Section */
 
+.business-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .business-list {
   display: flex;
 }
 
 .business-item:not(:last-child) {
   margin-right: 30px;
-  margin-bottom: 94px;
 }
 
 .section-title {
@@ -223,9 +243,11 @@ ul {
   margin-bottom: 50px;
 }
 /* Team Section */
+
 .team-section {
   background-color: var(--background-color-light);
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-container > .section-title {
@@ -253,6 +275,11 @@ ul {
   margin-bottom: 94px;
 }
 
+.team-member-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-member-name {
   font-weight: 500;
   font-size: 16px;
@@ -260,7 +287,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -271,17 +297,23 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   text-align: center;
-  margin-bottom: 30px;
 }
 
 /* Footer Section */
 
+.footer-logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--accent-color);
+  margin-bottom: 9px;
+}
+
 .footer-section {
   background-color: var(--background-color-dark);
   margin-top: 0px;
-}
-
-.footer-style {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -320,6 +352,9 @@ ul {
   color: rgba(var(--main-color), 0.2);
 }
 
+.business-details-item:not:last-child {
+  margin-bottom: 2px;
+}
 /* Portfolio Page*/
 
 /* Nav Bar Styling */
@@ -327,7 +362,6 @@ ul {
 .button-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -383,12 +417,16 @@ ul {
 
 /* Portfolio Page Projects Section */
 
+.projects-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 94px;
   gap: 30px;
 }
 
