@@ -130,7 +130,7 @@ ul {
 .hero-section {
   background-color: var(--background-color-dark);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -198,6 +198,10 @@ ul {
 .skills-list {
   display: flex;
   justify-content: center;
+}
+
+.skills-item {
+  width: 270px;
 }
 
 .skills-item:not(:last-child) {
@@ -272,7 +276,6 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--title-secondary-color);
-  margin-bottom: 94px;
 }
 
 .team-member-container {
@@ -420,6 +423,19 @@ ul {
 .projects-section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.projects-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .projects-list {
